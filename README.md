@@ -57,7 +57,9 @@ The baseline model, trained on the complete dataset, achieved **82.4% accuracy**
 
 The most important feature identified by the model is `st_slope`, used as the root split, a clinically meaningful finding, as the ST segment slope is a well-known indicator of myocardial ischemia. Other relevant features include `chest_pain_type`, `sex`, and `oldpeak`. Since surrogate splits are only triggered in the presence of missing values, both configurations yield identical results on a complete dataset. The baseline model was therefore trained without surrogate splits. This is the output decision tree:
 
-![Baseline Decision Tree](results/figures/decision_tree.png)
+<div align="center">
+    <img src="results/figures/decision_tree.png" alt="decision tree" width="800" />
+</div>
 
 ---
 
@@ -91,16 +93,24 @@ As the percentage of missing values increases, the two models diverge sharply:
 | 70%       | 57.7%                    | 69.2%                      | **+11.5%** |
 | 90%       | 56.3%                    | 57.1%                      | +0.8% |
 
-![Accuracy Comparison](results/figures/grafico_accuratezza.pdf)
+<br>
+<div align="center">
+    <img src="results/figures/grafico_accuratezza.jpg" alt="decision tree" width="800" />
+</div>
 
 ---
 
 ### The Specificity Collapse
 
 The most critical finding goes beyond accuracy. The model **without** surrogate splits does not simply become less accurate, it **collapses**. As missing data grows, it increasingly defaults to classifying every patient as "diseased", artificially inflating sensitivity to ~98% while specificity crashes to **below 10%** at 90% missing data. A model with 10% specificity is clinically useless: it would subject nearly every healthy patient to unnecessary further examinations and treatments.
-
-![Sensitivity Comparison](results/figures/grafico_sensibilita.pdf)
-![Specificity Comparison](results/figures/grafico_specificita.pdf)
+<br>
+<div align="center">
+    <img src="results/figures/grafico_sensibilita.jpg" alt="decision tree" width="800" />
+</div>
+<br>
+<div align="center">
+    <img src="results/figures/grafico_specificita.jpg" alt="decision tree" width="800" />
+</div>
 
 # Conclusions
 

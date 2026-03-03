@@ -1,6 +1,6 @@
 
 <div align="center">
-    <img src="https://www.eurosci.net/sites/default/files/logo-salento.png" alt="NaLA logo" width="300" />
+    <img src="https://www.eurosci.net/sites/default/files/logo-salento.png" alt="NaLA logo" width="225" />
     <h2>Gestione dei dati mancanti in Machine Learning: applicazione a dati clinici per la diagnosi di patologie cardiache</h2>
     <h4>Missing Data Management in Machine Learning: Application to Clinical Data for Cardiovascular Disease Diagnosis</h4>
 </div>

@@ -6,6 +6,14 @@
 </div>
 <br>
 
+<div align="center">
+
+[Introduction](#introduction) • [Dataset](#dataset) • [Methodology](#methodology) • [Results](#results) • [Conclusions](#conclusions) • [Future Work](#future-work) • [Requirements](#requirements--setup) • [Citation](#citation)
+
+</div>
+
+---
+
 # Introduction
 
 Machine Learning (ML) offers powerful tools for extracting valuable insights from complex clinical datasets. In cardiology, the application of these methods promises to significantly improve the early detection of heart disease. Supervised ML models, however, need to be trained on large amounts of data, and medical datasets are almost always affected by the **missing data problem**, caused by tests not performed, measurement errors, or accidental loss of information. Handling missing data is therefore a critical step in any clinical ML pipeline.

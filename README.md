@@ -10,7 +10,7 @@
 
 Machine Learning (ML) offers powerful tools for extracting valuable insights from complex clinical datasets. In cardiology, the application of these methods promises to significantly improve the early detection of heart disease. Supervised ML models, however, need to be trained on large amounts of data, and medical datasets are almost always affected by the **missing data problem**, caused by tests not performed, measurement errors, or accidental loss of information. Handling missing data is therefore a critical step in any clinical ML pipeline.
 
-This thesis directly addresses this challenge, focusing on the evaluation of effective strategies for managing incomplete data in the specific context of heart disease diagnosis. In particular, it analyses a technique native to **decision tree models: surrogate splits**. Unlike imputation methods, which attempt to estimate and fill in missing values, this mechanism allows the decision algorithm to handle the absence of a value at prediction time, leveraging correlated alternative variables to make a robust decision.
+This thesis directly addresses this challenge, focusing on the evaluation of effective strategies for managing incomplete data in the specific context of heart disease diagnosis. In particular, it analyses a technique native to **decision tree models (CART algorithm): surrogate splits**. Unlike imputation methods, which attempt to estimate and fill in missing values, this mechanism allows the decision algorithm to handle the absence of a value at prediction time, leveraging correlated alternative variables to make a robust decision.
 
 # Dataset
 

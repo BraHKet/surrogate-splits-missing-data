@@ -17,8 +17,6 @@ This thesis directly addresses this challenge, focusing on the evaluation of eff
 To investigate the effectiveness of this approach, an experimental study was conducted using the <b>UCI Heart Disease</b> clinical dataset. 
 The original dataset employed in this study is available at [<b>UCI Heart Disease</b>](https://raw.githubusercontent.com/rikhuijzer/heart-disease-dataset/main/heart-disease-dataset.csv).
 
-The extracted and processed subset employed for training and validation is available at the following link: [here](https://drive.google.com/drive/folders/1xcUxIP4C3Mhh7R4exW4TsWHK6R80tCty?usp=sharing).
-
 | Variable | Description |
 |----------|-------------|
 | `age` | Patient's age in years. |
@@ -93,7 +91,7 @@ As the percentage of missing values increases, the two models diverge sharply:
 | 70%       | 57.7%                    | 69.2%                      | **+11.5%** |
 | 90%       | 56.3%                    | 57.1%                      | +0.8% |
 
-![Accuracy Comparison](results/figures/grafico_accuratezza.png)
+![Accuracy Comparison](results/figures/grafico_accuratezza.pdf)
 
 ---
 
@@ -101,8 +99,8 @@ As the percentage of missing values increases, the two models diverge sharply:
 
 The most critical finding goes beyond accuracy. The model **without** surrogate splits does not simply become less accurate, it **collapses**. As missing data grows, it increasingly defaults to classifying every patient as "diseased", artificially inflating sensitivity to ~98% while specificity crashes to **below 10%** at 90% missing data. A model with 10% specificity is clinically useless: it would subject nearly every healthy patient to unnecessary further examinations and treatments.
 
-![Sensitivity Comparison](results/figures/grafico_sensibilita.png)
-![Specificity Comparison](results/figures/grafico_specificita.png)
+![Sensitivity Comparison](results/figures/grafico_sensibilita.pdf)
+![Specificity Comparison](results/figures/grafico_specificita.pdf)
 
 # Conclusions
 
